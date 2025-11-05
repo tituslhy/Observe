@@ -1118,6 +1118,15 @@ wheels = [
 ]
 
 [[package]]
+name = "jsonpickle"
+version = "4.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e4/a6/d07afcfdef402900229bcca795f80506b207af13a838d4d99ad45abf530c/jsonpickle-4.1.1.tar.gz", hash = "sha256:f86e18f13e2b96c1c1eede0b7b90095bbb61d99fedc14813c44dc2f361dbbae1", size = 316885, upload-time = "2025-06-02T20:36:11.57Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c1/73/04df8a6fa66d43a9fd45c30f283cc4afff17da671886e451d52af60bdc7e/jsonpickle-4.1.1-py3-none-any.whl", hash = "sha256:bb141da6057898aa2438ff268362b126826c812a1721e31cf08a6e142910dc91", size = 47125, upload-time = "2025-06-02T20:36:08.647Z" },
+]
+
+[[package]]
 name = "jupyter-client"
 version = "8.6.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1384,6 +1393,20 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/b3/77/5bfaab20e6ec8428dbf2352e18be550c957602723d69383908176b5686cd/llama_index_readers_llama_parse-0.5.1.tar.gz", hash = "sha256:2b78b73faa933e30e6c69df351e4e9f36dfe2ae142e2ab3969ddd2ac48930e37", size = 3858, upload-time = "2025-09-08T20:41:29.201Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/68/81/52410c7245dcbf1a54756a9ce3892cdd167ec0b884d696de1304ca3f452e/llama_index_readers_llama_parse-0.5.1-py3-none-any.whl", hash = "sha256:0d41450ed29b0c49c024e206ef6c8e662b1854e77a1c5faefed3b958be54f880", size = 3203, upload-time = "2025-09-08T20:41:28.438Z" },
+]
+
+[[package]]
+name = "llama-index-utils-workflow"
+version = "0.5.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "llama-index-core" },
+    { name = "llama-index-workflows" },
+    { name = "pyvis" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/93/b1/627d6ed715ba3abab65e058bcc3a7a5924f9e818276f8e8c980a4fe74808/llama_index_utils_workflow-0.5.0.tar.gz", hash = "sha256:0d1d85fc6f6c229a8d7d09f7341221663bebd47c587c2d524ae732c274bddc33", size = 6812, upload-time = "2025-10-28T18:54:18.377Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5f/7e/498a934a31384c1f6588443c68ae91367aa0d4399c7c5b8853b4232f7402/llama_index_utils_workflow-0.5.0-py3-none-any.whl", hash = "sha256:80418fc0fd8fe419331fb496ef44bde367af6e60382f21f4fc54a0454d8d9588", size = 7391, upload-time = "2025-10-28T18:54:17.339Z" },
 ]
 
 [[package]]
@@ -1703,6 +1726,7 @@ dependencies = [
     { name = "llama-index-llms-ollama" },
     { name = "llama-index-llms-openai" },
     { name = "llama-index-question-gen-guidance" },
+    { name = "llama-index-utils-workflow" },
     { name = "llama-index-vector-stores-postgres" },
     { name = "openinference-instrumentation-llama-index" },
     { name = "psycopg2-binary" },
@@ -1718,6 +1742,7 @@ requires-dist = [
     { name = "llama-index-llms-ollama", specifier = ">=0.9.0" },
     { name = "llama-index-llms-openai", specifier = ">=0.6.7" },
     { name = "llama-index-question-gen-guidance", specifier = ">=0.4.1" },
+    { name = "llama-index-utils-workflow", specifier = ">=0.5.0" },
     { name = "llama-index-vector-stores-postgres", specifier = ">=0.7.1" },
     { name = "openinference-instrumentation-llama-index", specifier = ">=4.3.8" },
     { name = "psycopg2-binary", specifier = ">=2.9.11" },
@@ -2507,6 +2532,20 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f8/bf/abbd3cdfb8fbc7fb3d4d38d320f2441b1e7cbe29be4f23797b4a2b5d8aac/pytz-2025.2.tar.gz", hash = "sha256:360b9e3dbb49a209c21ad61809c7fb453643e048b38924c765813546746e81c3", size = 320884, upload-time = "2025-03-25T02:25:00.538Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/81/c4/34e93fe5f5429d7570ec1fa436f1986fb1f00c3e0f43a589fe2bbcd22c3f/pytz-2025.2-py2.py3-none-any.whl", hash = "sha256:5ddf76296dd8c44c26eb8f4b6f35488f3ccbf6fbbd7adee0b7262d43f0ec2f00", size = 509225, upload-time = "2025-03-25T02:24:58.468Z" },
+]
+
+[[package]]
+name = "pyvis"
+version = "0.3.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ipython" },
+    { name = "jinja2" },
+    { name = "jsonpickle" },
+    { name = "networkx" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/4b/e37e4e5d5ee1179694917b445768bdbfb084f5a59ecd38089d3413d4c70f/pyvis-0.3.2-py3-none-any.whl", hash = "sha256:5720c4ca8161dc5d9ab352015723abb7a8bb8fb443edeb07f7a322db34a97555", size = 756038, upload-time = "2023-02-24T20:29:46.758Z" },
 ]
 
 [[package]]
