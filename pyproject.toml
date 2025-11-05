@@ -1,0 +1,13 @@
+[project]
+name = "observe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "arize-phoenix[evals]>=12.9.0",
+    "ipykernel>=7.1.0",
+    "llama-index>=0.14.7",
+    "llama-index-llms-ollama>=0.9.0",
+    "openinference-instrumentation-llama-index>=4.3.8",
+]
