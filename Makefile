@@ -1,4 +1,10 @@
-.PHONY up
+.PHONY: up build down
+
+build:
+	docker compose up -d --build
 
 up:
-	docker compose up --build
+	docker compose up -d
+
+down:
+	docker compose down -v --remove-orphans
